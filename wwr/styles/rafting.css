@@ -22,15 +22,25 @@ header{
 }
 .logo img {
     justify-content: left;
-	width: 64px;
-	height: auto;
+	height: 64px;
+	width: auto;
 }
 header nav{
-    
+    display: grid;
     
 }
+
 body{
     margin: 1rem;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+}
+footer{
+    margin-top: 10px;
+    border-top: 1px solid var(--accent-color-two);
+    text-align: center;
+}
+footer img{
+    max-width: 100px;
+
 }

@@ -1,6 +1,11 @@
 :root{
     --primary-color: white;
 }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 nav{
     background-color: steelblue;
     padding: 10px;
@@ -28,24 +33,38 @@ main{
 }
 aside{
     width: 20rem;
-    margin: 1rem;
     border: 2px solid rgba(0,0,0,0.2);
-    padding: 1rem;
-    background-color: lightgray;
     text-align: center;
+    position: relative;
 }
 aside img{
     width: 200px;
     height: auto;
 
 }
+aside h2{
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    color: black;
+    background-color: rgba(2, 192, 250, 0.419);
+}
 main img{
     width: 150px;
     height: auto;
+    float: right;
 
 }
 footer{
     margin-top: 10px;
     border-top: 2px solid black;
     text-align: center;
+}
+/* class selectors */
+.box {
+    margin: 1rem;
+    border: 1px solid black;
+    padding: 1rem;
+    background-color: lightgray;
+    color: black;
 }
