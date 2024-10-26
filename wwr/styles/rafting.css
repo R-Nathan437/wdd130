@@ -2,7 +2,7 @@
     --primary-color-one: #FCFCF9;
     --primary-color-two: #0070BB;
     --accent-color-one: #FFD800;
-    --accent-color-two: #8A7642;
+    --accent-color-two: #8a7642;
     --heading-font: "Noto Sans", sans-serif;
     --text-font: "Fira sans condensed", sans-serif;
 
@@ -24,6 +24,9 @@ h1, h2, h3, h4, h5{
 p{
     color: var(--primary-color-two);
 }
+a{
+    color: var(--primary-color-one);
+}
 img{
     max-width: 1000px;
     height: auto;
@@ -32,18 +35,23 @@ img{
 header{
         margin: 1rem auto;
         display: grid;
-        grid-template-columns: 2/3;
+        grid-template: 1fr / 1fr 2fr;
         border-bottom: 1px solid black;
         max-width: 1000px;
         background-color: var(--primary-color-two);
 }
-
 header nav{
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
+header nav a{
+    border: 1px solid black;
+    padding: 1rem;
+}
 article{
-    background-color: rgba(0, 0, 10, .5);
+    background-color: rgba(48, 42, 24, 0.759);
 }
 article p{
     color: var(--primary-color-one);
@@ -55,23 +63,33 @@ footer{
 }
 footer img{
     max-width: 100px;
-
+    float: right;
 }
 .hero{
     position: relative;
 }
-.hero h1, article{
+.hero h1{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.457);
+    color: var(--primary-color-one);
     position: absolute;
-    top: 50px;
+    top: 1rem;
+    left: 50px;
+}
+.hero article{
+    position: absolute;
+    top: 100px;
     left: 50px;
     padding: 1rem;
 }
-
 .hero img{
-    display: block;
     width: 100%;
     height: auto;
+}
+.hero article img{
     float: right;
+    height: 100%;
+    width: auto;
 }
 .logo img {
     justify-content: left;
