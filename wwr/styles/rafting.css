@@ -3,37 +3,50 @@
     --primary-color-two: #0070BB;
     --accent-color-one: #FFD800;
     --accent-color-two: #8A7642;
+    --heading-font: "Noto Sans", sans-serif;
+    --text-font: "Fira sans condensed", sans-serif;
+
+}
+body{
+    margin: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    font-family: "Fira Sans Condensed", sans-serif;
+    font-weight: 400;
+    background-color: var(--primary-color-one);
+}
+h1, h2, h3, h4, h5{
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 100;
+    background-color: var(--accent-color-one);
+    color: var(--accent-color-two);
+}
+p{
+    color: var(--primary-color-two);
 }
 img{
     max-width: 1000px;
     height: auto;
 }
-.hero img{
-    display: block;
-    width: 100%;
-    height: auto;
-}
+
 header{
         margin: 1rem auto;
         display: grid;
         grid-template-columns: 2/3;
         border-bottom: 1px solid black;
         max-width: 1000px;
-}
-.logo img {
-    justify-content: left;
-	height: 64px;
-	width: auto;
-}
-header nav{
-    display: grid;
-    
+        background-color: var(--primary-color-two);
 }
 
-body{
-    margin: 1rem;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
+header nav{
+    
+    
+}
+article{
+    background-color: rgba(0, 0, 10, .5);
+}
+article p{
+    color: var(--primary-color-one);
 }
 footer{
     margin-top: 10px;
@@ -44,7 +57,28 @@ footer img{
     max-width: 100px;
 
 }
-a{
+.hero{
+    position: relative;
+}
+.hero h1, article{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    padding: 1rem;
+}
+
+.hero img{
+    display: block;
+    width: 100%;
+    height: auto;
+    float: right;
+}
+.logo img {
+    justify-content: left;
+	height: 64px;
+	width: auto;
+}
+.sociallinks a{
     text-decoration: none;
 
 }
