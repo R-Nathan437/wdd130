@@ -100,3 +100,50 @@ footer img{
     text-decoration: none;
 
 }
+form{
+    width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: .3rem;
+    background-color: blanchedalmond;
+    display: grid;
+}
+fieldset{
+    display: grid;
+    grid-gap: .5rem;
+    margin: 1rem;
+    border: 1px solid rgba(0,0,0,.3);
+    padding: 1rem;
+}
+label, input, button, textarea{
+    font-family: Arial, Helvetica, sans-serif;
+}
+label{
+    text-align: left;
+    padding-right: 1rem;
+}
+input, select, textarea{
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+input[type="checkbox"]{
+    width: 22px;
+    height: 22px;
+}
+button{
+    margin: 1rem;
+    background-color: royalblue;
+    color: white;
+    border: none;
+    border-radius: .4rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+}
+button:hover{
+    background-color: darkolivegreen;
+}
+.form-item{
+    display: grid;
+    align-items: center;
+}
