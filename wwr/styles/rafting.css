@@ -125,7 +125,14 @@ footer a{
 .trip article{
     display: block;
 }
-
+table{
+    border: 1px solid black;
+}
+td
+{
+    border: 1px solid black;
+    margin: 0;
+}
 form{
     width: 650px;
     margin: 0 auto;
