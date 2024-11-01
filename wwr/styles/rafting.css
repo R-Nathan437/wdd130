@@ -31,7 +31,22 @@ img{
     max-width: 1000px;
     height: auto;
 }
-
+aside{
+    position: relative;
+    background-color: var(--accent-color-one);
+    min-width: 100px;
+    min-height: 200px ;
+    padding: 10px;
+    border: 1px solid var(--primary-color-two);
+    border-radius: .2rem;
+}
+aside a{
+    position: absolute;
+    font-size: x-large;
+    right: 10px;
+    top: 10px;
+    color: var(--primary-color-two);
+}
 header{
         margin: 1rem auto;
         display: grid;
@@ -64,6 +79,9 @@ footer{
 footer img{
     max-width: 100px;
     float: right;
+}
+footer a{
+    color: var(--primary-color-two);
 }
 .hero{
     position: relative;
@@ -100,6 +118,14 @@ footer img{
     text-decoration: none;
 
 }
+.trip{
+    display: flex;
+    flex-wrap: wrap;
+}
+.trip article{
+    display: block;
+}
+
 form{
     width: 650px;
     margin: 0 auto;
@@ -146,4 +172,20 @@ button:hover{
 .form-item{
     display: grid;
     align-items: center;
+}
+#Home-advertisement{
+    display: grid;
+    grid-template: 1fr 1fr/.5fr .5fr;
+    background-color: var(--primary-color-two);
+}
+#Home-advertisement img{
+    grid-row: 2/3;
+    max-width: 400px;
+    margin: 10px;
+}
+#Home-advertisementt div{
+    grid-row: 1/2;
+}
+#Home-advertisementt ol{
+    color: var(--accent-color-two);
 }
