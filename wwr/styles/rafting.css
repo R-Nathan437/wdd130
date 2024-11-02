@@ -31,22 +31,7 @@ img{
     max-width: 1000px;
     height: auto;
 }
-aside{
-    position: relative;
-    background-color: var(--accent-color-one);
-    min-width: 100px;
-    min-height: 200px ;
-    padding: 10px;
-    border: 1px solid var(--primary-color-two);
-    border-radius: .2rem;
-}
-aside a{
-    position: absolute;
-    font-size: x-large;
-    right: 10px;
-    top: 10px;
-    color: var(--primary-color-two);
-}
+
 header{
         margin: 1rem auto;
         display: grid;
@@ -70,6 +55,22 @@ article{
 }
 article p{
     color: var(--primary-color-one);
+}
+aside{
+    position: relative;
+    background-color: var(--accent-color-one);
+    min-width: 100px;
+    min-height: 200px ;
+    padding: 10px;
+    border: 1px solid var(--primary-color-two);
+    border-radius: .2rem;
+}
+aside a{
+    position: absolute;
+    font-size: x-large;
+    right: 10px;
+    top: 10px;
+    color: var(--primary-color-two);
 }
 footer{
     margin-top: 10px;
@@ -190,9 +191,11 @@ button:hover{
     max-width: 400px;
     margin: 10px;
 }
-#Home-advertisementt div{
+#Home-advertisement div{
     grid-row: 1/2;
 }
-#Home-advertisementt ol{
-    color: var(--accent-color-two);
+p #Home-advertisementt{
+    color: var(--accent-color-one);
+    
 }
+
